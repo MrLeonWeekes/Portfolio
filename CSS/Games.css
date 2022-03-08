@@ -92,10 +92,12 @@ p {
   text-decoration: none;
   color: #0E76A8;
   list-style: none;
+  text-align: center;
 }
 
 .linkedin-about {
   text-align: center;
+  /* list-style: none; */
 }
 
 .hidden-intro {
