@@ -84,6 +84,20 @@ p {
   color: rgb(0, 128, 55);
 }
 
+.linkedin-container {
+  list-style: none;
+}
+
+.linkedin {
+  text-decoration: none;
+  color: #0E76A8;
+  list-style: none;
+}
+
+.linkedin-about {
+  text-align: center;
+}
+
 .hidden-intro {
   margin-top: 10vh;
   padding: 0 10vh;
