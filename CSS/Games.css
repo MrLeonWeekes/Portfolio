@@ -797,18 +797,15 @@ button.game-fb-startStop {
   margin-top: 160px;
 }
 
-/* .game-fb-mobile {
-    display: none;
-  }
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:600px){
+  .games-container {
+    margin-top: 200px;
+  }
   #game {
-    margin-bottom: 5vh;  
+    margin-bottom: 30px;
   }
-  .game-fb-desktop {
-    display: none;
-  }
-} */
+} 
  /* -------------------------------------------
   ------------------------------------ ABOUT ME
   ------------------------------------------- */
@@ -1209,10 +1206,12 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding-bottom: 0;
   }
   .weather-app-size {
     width: 100vw;
   }
+  
   
 }
 
