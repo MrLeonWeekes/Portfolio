@@ -574,9 +574,9 @@ p {
   
   .app {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    padding: 10vh 0 7vh;
+    flex-direction: row;
   }
   
   header h1 {
@@ -745,14 +745,6 @@ button.game-fb-startStop {
   z-index: 1;
 }
 
-.app {
-  background-color: rgba(211, 211, 211, 0.199);
-  padding: 10vh 0 7vh;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: row;
-}
-
 #game-2 {
   align-self: center;
   padding: 0 10vh;
@@ -805,11 +797,18 @@ button.game-fb-startStop {
   margin-top: 150px;
 }
 
+/* .game-fb-mobile {
+    display: none;
+  }
+
 @media only screen and (max-width:900px){
   #game {
     margin-bottom: 5vh;  
   }
-}
+  .game-fb-desktop {
+    display: none;
+  }
+} */
  /* -------------------------------------------
   ------------------------------------ ABOUT ME
   ------------------------------------------- */
@@ -1089,3 +1088,145 @@ form.contact-container-2 {
   background-color: #fff;
   box-shadow: 15px 15px 10px -5px rgba(107, 99, 99, 0.459);
 }
+
+
+ /* -------------------------------------------
+  ------------------------------------- WEATHER
+  ------------------------------------------- */
+
+.app-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgba(230, 230, 230, 0.356);
+  padding:70px 0px;
+  /* background-image: url(/IMAGES/weatherP4.jpg); */
+  /* background-image: linear-gradient(to bottom, rgba 0,0,0,0.3), rgba(0,0,0,0.6); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* color: #fff; */
+  min-height: 60vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 15px 15px;
+}
+
+/* .temp {
+  padding: 0;
+  margin: 0;
+} */
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* color: #fff; */
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+input.search-box {
+  border: none;
+  outline: none;
+  border-radius: 16px 0 16px 0;
+  /* border-bottom: 3px solid rgb(0, 128, 55); */
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+header input:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  flex: 1 1 100%; 
+  width: 600px;
+  height: 500px;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game4 {
+  margin: 0 auto;
+  /* width: 46%; */
+  /* background-image: url(/IMAGES/weatherP4.jpg); */
+  /* background-color: rgba(0, 128, 55, 0.2); */
+}
+
+.location .city {
+  /* color: rgb(0, 0, 0); */
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  /* color: rgb(0, 0, 0); */
+  font-size: 16px;
+}
+
+.current .temp {
+  /* color: rgb(0, 0, 0); */
+  font-size: 105px;
+  font-weight: 900;
+  /* margin: 30px 0px; */
+  /* text-shadow: 2px 10px rgba(0,0,0,0.6); */
+}
+
+.currebt .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  /* color: rgb(0, 0, 0); */
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  /* text-shadow: 0px 3px rgba(0,0,0,0.4); */
+}
+
+.current .hi-low {
+  /* color: rgb(0, 0, 0); */
+  font-size: 24px;
+  font-weight: 500;
+  /* text-shadow: 0px 4px rgba(0,0,0,0.4); */
+}
+
+
+@media only screen and (max-width: 900px) {
+ 
+  div.app-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .game-heading-text {
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+  .game-img-btn {
+    display: flex;
+    margin: 0 auto;
+  }
+  div#game {
+    width: 90vw;
+    
+    height: 500px;
+  }
+  
+}
+
+
+
+
+

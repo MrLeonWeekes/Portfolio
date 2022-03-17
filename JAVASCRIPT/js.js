@@ -122,3 +122,96 @@ function jump() {
 
 
 
+/* -------------------------------------------
+ ------------------------------------- WEATHER
+ ------------------------------------------- */
+
+const api = {
+    key: "ce91e66e91998fcf7792cf0927f15e20",
+    base: "https://api.openweathermap.org/data/2.5/"
+}
+
+
+// SET UP AN EVENT LISTENER FOR WHEN THE ENTER KEY IS PRESSED 
+// ONCE PRESSED IT WILL RUN THE "SETQUERY" FUNCTION
+const searchbox = document.querySelector('.search-box');
+searchbox.addEventListener('keypress', setQuery);
+
+// THIS FUNCTION GETS THE ENTER DETAILS FRON THE INPUT BOX
+function setQuery(evt) {
+    if (evt.keyCode == 13) {
+        getResults(searchbox.value)
+    }
+}
+
+// THIS FUNCTION RUNS A FETCH REQUEST AND BUILD UP THE URL THAT HAS ALL THE DETAILS TO OBTAIN THE CORRECT INFO FROM THE WEATHER WEBSITE
+// THE BASE URL THEN THEN STANDARD TEXT ALONG WITH THE QUERY WHICH IS "LONDON" FOR EXAMPLE THEN MNORE STANDARD TEXT AND FINALLY THE API KEY
+// "&units=metric" CONVERT TO CELCIUS
+// .THEN DEALS WITH API CALLS
+// CONVERTS IT TO WEATHER VARIABLE AND CONVERTS IT TO JSON THEN PASS THE JSON THROUGH "displayResults" NAMED AS WEATHER
+function getResults(query) {
+    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(weather => {
+            return weather.json();
+        }).then(displayResults);
+}
+
+function displayResults(weather) {
+    console.log(weather)
+    let city = document.querySelector('.location .city');
+    city.innerText = `${weather.name}, ${weather.sys.country}`;
+
+    let now = new Date();
+    let date = document.querySelector('.location .date');
+    date.innerText = dateBuilder(now);
+
+    let temp = document.querySelector('.current .temp');
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+
+    let weather_el = document.querySelector('.current .weather');
+    weather_el.innerText = weather.weather[0].main;
+
+    let hilow = document.querySelector('.hi-low');
+    hilow.innerText = `Low: ${Math.round(weather.main.temp_min)}°c / Hi: ${Math.round(weather.main.temp_max)}°c`;
+
+    let temp_test = `${Math.round(weather.main.temp)}`
+    console.log(temp_test)
+
+    if (temp_test > 15) {
+        document.querySelector('.game4').style.backgroundImage = "url(/IMAGES/weatherP2.jpg)";
+        document.querySelector('.game4').style.color = "#fff";
+        // document.querySelector('.text-color').style.color = "rgb(0, 128, 55)";
+    } else if (temp_test > 10) {
+        document.querySelector('.game4').style.backgroundImage = "url(/IMAGES/weatherP3.jpg)";
+        document.querySelector('.game4').style.color = "#fff";
+        // document.querySelector('.text-color').style.color = "rgb(0, 128, 55)";
+    } else {
+        document.querySelector('.game4').style.backgroundImage = "url(/IMAGES/weatherP1.jpg)";
+        document.querySelector('.game4').style.color = "#fff";
+        // document.querySelector('.text-color').style.color = "rgb(0, 128, 55)";
+    }
+
+
+}
+
+function dateBuilder(d) {
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let day = days[d.getDay()];
+    let date = d.getDate();
+    let month = months[d.getMonth()]
+    let year = d.getFullYear();
+
+    return `${day} ${date} ${month} ${year}`
+}
+
+
+
+
+
+
+
+
+
+
+
