@@ -794,7 +794,7 @@ button.game-fb-startStop {
 } 
 
 .games-container {
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 /* .game-fb-mobile {
@@ -1210,18 +1210,8 @@ main {
     flex-direction: column;
     margin: 0 auto;
   }
-  .game-heading-text {
-    text-align: center;
-    padding-bottom: 2vh;
-  }
-  .game-img-btn {
-    display: flex;
-    margin: 0 auto;
-  }
-  div#game {
-    width: 90vw;
-    
-    height: 500px;
+  .weather-app-size {
+    width: 100vw;
   }
   
 }
