@@ -186,7 +186,7 @@ function displayResults(weather) {
         document.querySelector('.game4').style.color = "#fff";
         // document.querySelector('.text-color').style.color = "rgb(0, 128, 55)";
     } else {
-        document.querySelector('.game4').style.backgroundImage = "url(/IMAGES/weatherP1.jpg)";
+        document.querySelector('.game4').style.backgroundImage = "url(/IMAGES/weatherP3.jpg)";
         document.querySelector('.game4').style.color = "#fff";
         // document.querySelector('.text-color').style.color = "rgb(0, 128, 55)";
     }
