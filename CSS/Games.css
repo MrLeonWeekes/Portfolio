@@ -1095,7 +1095,7 @@ form.contact-container-2 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: rgba(230, 230, 230, 0.356);
+  background-color: rgba(0, 128, 55, 0.05);
   padding:70px 0px;
   /* background-image: url(/IMAGES/weatherP4.jpg); */
   /* background-image: linear-gradient(to bottom, rgba 0,0,0,0.3), rgba(0,0,0,0.6); */
@@ -1121,7 +1121,7 @@ header input {
   width: 100%;
   max-width: 280px;
   padding: 10px 15px;
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(151, 67, 67, 0.795); */
   /* color: #fff; */
   font-size: 20px;
   font-weight: 300;
@@ -1134,7 +1134,7 @@ input.search-box {
   border-radius: 16px 0 16px 0;
   /* border-bottom: 3px solid rgb(0, 128, 55); */
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
-  background-color: rgba(255, 255, 255, 0.226);
+  background-color: rgba(255, 255, 255, 0.664);
 }
 
 header input:focus {
