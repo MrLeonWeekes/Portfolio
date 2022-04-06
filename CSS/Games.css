@@ -1012,7 +1012,7 @@ form.contact-container-2 {
   padding: 10px 0 ;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=number], input[type=email], select, textarea {
   border: 1px solid #fff;
   border-radius: 10px;
 }
@@ -1215,6 +1215,410 @@ main {
   
 }
 
+
+
+ /* -------------------------------------------
+  --------------------------------- GYM WEBSITE
+  ------------------------------------------- */
+
+/* HERO */
+
+.HeroGym-Container {
+  background-image: url(/IMAGES/HeroGym1.jpg);
+  display: flex;
+  flex-direction: column;
+  padding: 40vh 10vh 30vh;
+  background-size: cover;
+}
+
+.HeroGym-Div {
+  width: 60%;
+}
+
+.HeroGym-Div h1 {
+  font-size: 80px;
+  color: #fff;
+}
+
+.HeroGym-Div p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.gym-button {
+  background-color: #ff1616;
+  border: 3px solid #ff1616;
+  
+}
+
+#close {
+  margin: 0;
+}
+
+/* WHAT WE DO  */
+
+.What-we-do-Container {
+  padding: 10vh 5vh;
+  justify-content: space-between;
+}
+
+.What-we-do {
+  display: flex;
+  flex-direction: row;
+}
+
+.What-we-do div{
+  padding: 0 5vh;
+  text-align: center;
+}
+
+h4.What-we-do-heading {
+  padding: 15px 0;
+}
+
+.What-we-do-icon {
+  color: #ff1616;
+}
+
+/* BMI  */
+
+.bmi-assessment-container {
+  background-color: rgb(0, 0, 0);
+  padding: 10vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.bmi-section-1 {
+  margin: 0 auto;
+}
+
+.bmi-section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gym-website-headings {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 0;
+}
+
+.bmi-style, .bmi-style2, .bmi-style3, .contact-section-1 > select{
+  padding: 10px 0;
+ }
+
+.bmi-style {
+  color: #fff;
+}
+
+.bmi-style2 {
+  color: #000;
+}
+
+.bmi-style3 {
+  color: #ff1616;
+}
+
+.bmi-assessment, .bmi-result {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.bmi-assessment, .bmi-graph {
+  align-self: center;
+}
+
+.bmi-result-text {
+  color: #fff;
+  margin-top: 30px;
+}
+
+#demo {
+  color: #21759b;
+}
+
+#bmi-your-score, #bmi-your-details, #bmi-your-type {
+  margin: 0;
+}
+
+/* SIGN UP  */
+
+.gym-website-headings2 {
+  color: #000;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 5vh;
+}
+
+.gym-signup-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2vh 5vh 7vh;
+}
+
+.contact-section-1 {
+  display: flex;
+  flex-direction: column;
+  width: 33.3vw;
+  margin: 0 2vw;
+}
+
+.contact-section-1 > input, .contact-section-1 > select {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.336);
+}
+
+.contact-section-1 > select {
+  padding: 12px 0;
+}
+
+.pt-row img {
+  width: 70%;
+  height: auto;
+  padding-bottom: 2vh;
+}
+
+div.pt-row {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 2vh 0 ;
+}
+
+.pt-section {
+  align-self: center;
+}
+
+.pt-row h5 {
+  font-weight: 600;
+}
+
+/* Modal (background) */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 35vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 4px solid #fff;
+  width: 80%;
+}
+
+#close:hover,
+#close:focus {
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal_split_1 {
+  width: 50%;
+  height: auto;
+}
+
+.modal_img {
+  background-image: url(/IMAGES/HeroGym3.jpg);
+  background-position: center;
+  height: 30vh;
+}
+
+.modal_text {
+  text-align: center;
+  align-self: center;
+}
+
+/* WEBSITE IMAGES  */
+
+.gym-website-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.gym-images img {
+  margin: 0;
+  padding: 0;
+  width: 33.3vw;
+}
+
+/* FOOTER  */
+
+.gym-footer-container {
+  margin: 0;
+  padding: 5vh 10vw;
+  background-color: #ff1616;
+  position:relative;
+  bottom:0;
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  /* WHAT WE DO  */
+  .What-we-do {
+    flex-direction: column;
+  }
+  /* BMI  */
+  .bmi-section-2 {
+    flex-direction: column;
+  }
+  .bmi-assessment, .bmi-result {
+    margin: 0 auto 5vh;
+    width: 60%;
+  }
+  /* SIGN UP  */
+  .gym-signup-container {
+    flex-direction: column;
+  }
+  .contact-section-1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #myBtn {
+    margin-bottom: 5vh;
+  }
+  .pt-row img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* HERO  */
+  .HeroGym-Container {
+    background-image: url(/IMAGES/HeroGym1900.jpg);
+  }
+  .HeroGym-Div h1 {
+    font-size: 50px;
+  }
+  /* WHAT WE DO  */
+  .What-we-do-Container {
+    padding: 5vh 2vh;
+  }
+  .What-we-do {
+    flex-direction: column;
+  }
+  /* BMI  */
+  .bmi-assessment-container {
+    padding: 5vh;
+  }
+  .bmi-section-2 {
+    flex-direction: column;
+  }
+  .gym-website-headings {
+    font-size: 40px;
+    text-align: center;
+  }
+  .bmi-assessment, .bmi-result {
+    margin: 0 auto 5vh;
+    width: 80%;
+  }
+  /* SIGN UP  */
+  .gym-signup-container {
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 5vh;
+  }
+  .contact-section-1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #myBtn {
+    margin-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* HERO  */
+  .HeroGym-Container {
+    padding: 30vh 5vh 15vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* HERO  */
+  .HeroGym-Container {
+    padding: 35vh 5vh 15vh;
+  }
+  .HeroGym-Div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .HeroGym-Div h1 {
+    font-size: 40px;
+  }
+  .HeroGym-Div p {
+    font-size: 14px;
+  }
+  /* GYM IMAGES */ 
+  .gym-website-images {
+    flex-direction: column;
+    width: 100%;
+  }
+  .gym-images img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+  /* HERO  */
+  .HeroGym-Container {
+    padding: 25vh 2vh 10vh;
+  }
+  .HeroGym-Div h1 {
+    font-size: 30px;
+  }
+  .HeroGym-Div {
+    width: 100%;
+  }
+  /* WHAT WE DO */
+  .What-we-do div{
+    padding: 0vh;
+  }
+  /* BMI  */
+  .bmi-assessment-container {
+    padding: 5vh 0vh;
+  }
+  .gym-website-headings {
+    font-size: 30px;
+  }
+  .bmi-graph-image {
+    width: auto;
+  }
+  /* SIGN UP  */
+  .gym-signup-container {
+    padding: 5vh 0;
+  }
+}
 
 
 

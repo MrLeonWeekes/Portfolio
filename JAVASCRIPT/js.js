@@ -68,57 +68,57 @@ window.addEventListener('load', () => {
 // ------------------------------- FLAPPY BIRD
 // -------------------------------------------
 
-var block = document.getElementById("block");
-var hole = document.getElementById("hole");
-var character = document.getElementById("character");
-var jumping = 0;
-var counter = 0;
-var highscore = [];
-hole.addEventListener('animationiteration', () => {
-    var random = -((Math.random() * 300) + 150);
-    hole.style.top = random + "px";
-    counter++;
-});
+// var block = document.getElementById("block");
+// var hole = document.getElementById("hole");
+// var character = document.getElementById("character");
+// var jumping = 0;
+// var counter = 0;
+// var highscore = [];
+// hole.addEventListener('animationiteration', () => {
+//     var random = -((Math.random() * 300) + 150);
+//     hole.style.top = random + "px";
+//     counter++;
+// });
 
 // ------------ 
 
-const btnStart = document.getElementById("character");
+// const btnStart = document.getElementById("character");
 
-btnStart.addEventListener("click", function () {
+// btnStart.addEventListener("click", function () {
 
-    const sss = setInterval(function start() {
-        var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if (jumping == 0) {
-            character.style.top = (characterTop + 3) + "px";
-        }
-        var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-        var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
-        var cTop = -(650 - characterTop);
-        if ((characterTop > 630) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 280)))) {
-            clearInterval(sss);
-            document.getElementById("high-score").innerHTML = counter;
-            character.style.top = 350 + "px";
-            counter = 0;
-        }
-    }, 10);
-});
+//     const sss = setInterval(function start() {
+//         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+//         if (jumping == 0) {
+//             character.style.top = (characterTop + 3) + "px";
+//         }
+//         var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+//         var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
+//         var cTop = -(650 - characterTop);
+//         if ((characterTop > 630) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 280)))) {
+//             clearInterval(sss);
+//             document.getElementById("high-score").innerHTML = counter;
+//             character.style.top = 350 + "px";
+//             counter = 0;
+//         }
+//     }, 10);
+// });
 
-function jump() {
-    jumping = 1;
-    let jumpCount = 0;
-    var jumpInterval = setInterval(function () {
-        var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if ((characterTop > 6) && (jumpCount < 15)) {
-            character.style.top = (characterTop - 5) + "px";
-        }
-        if (jumpCount > 20) {
-            clearInterval(jumpInterval);
-            jumping = 0;
-            jumpCount = 0;
-        }
-        jumpCount++;
-    }, 10);
-};
+// function jump() {
+//     jumping = 1;
+//     let jumpCount = 0;
+//     var jumpInterval = setInterval(function () {
+//         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+//         if ((characterTop > 6) && (jumpCount < 15)) {
+//             character.style.top = (characterTop - 5) + "px";
+//         }
+//         if (jumpCount > 20) {
+//             clearInterval(jumpInterval);
+//             jumping = 0;
+//             jumpCount = 0;
+//         }
+//         jumpCount++;
+//     }, 10);
+// };
 
 
 
@@ -207,11 +207,60 @@ function dateBuilder(d) {
 
 
 
+/* -------------------------------------------
+ ------------------------------------- WEBSITE
+ ------------------------------------------- */
+
+
+
+
+function getDetails() {
+    var firstName1 = document.getElementById("first-name").value;
+    var weight1 = Math.round(document.getElementById("weight").value);
+    var height1 = (document.getElementById("height").value);
+    var heightTotal = (height1 * height1);
+    var heightCalulation = heightTotal.toFixed(2);
+    var bmiTotal = (weight1 / heightCalulation);
+    var bmiCalculation = bmiTotal.toFixed(2);
+    document.getElementById("bmi-your-score").innerHTML = bmiCalculation;
+
+
+
+    if (firstName1 == "" || weight1 <= 0 || height1 <= 0) {
+        document.getElementById("bmi-your-score").innerHTML = "Please enter all your details for results";
+        document.getElementById("bmi-your-type").innerHTML = "Please enter all your details for results";
+        document.getElementById("bmi-your-details").innerHTML = "Please enter all your details for results";
+    } else {
+
+
+
+        if (bmiCalculation > 30) {
+            document.getElementById("bmi-your-type").innerHTML = "Obese";
+            document.getElementById("bmi-your-details").innerHTML = "Hi " + firstName1 + ", your BMI total is " + bmiCalculation + ". Being obese significantly increases your risk of developing heart disease and type 2 diabetes. If you fall into this category you should see a GP and ask their advice on bringing down your weight.";
+        } else if (bmiCalculation >= 25) {
+            document.getElementById("bmi-your-type").innerHTML = "Overweight";
+            document.getElementById("bmi-your-details").innerHTML = "Hi " + firstName1 + ", your BMI total is " + bmiCalculation + ". A high proportion of adults fall into the overweight category. This is a good time to make an honest assessment of your lifestyle to see if you should reduce calories in your diet or increase the calories you burn with exercise. The higher you fall within this bracket the higher your risk of cardiovascular disease.";
+        } else if (bmiCalculation >= 18.5) {
+            document.getElementById("bmi-your-type").innerHTML = "Normal";
+            document.getElementById("bmi-your-details").innerHTML = "Hi " + firstName1 + ", your BMI total is " + bmiCalculation + ". Adults in the normal range are considered to have a healthy weight. Maintain it with regular exercise and a healthy diet.";
+        } else {
+            document.getElementById("bmi-your-type").innerHTML = "Underweight";
+            document.getElementById("bmi-your-details").innerHTML = "Hi " + firstName1 + ", your BMI total is " + bmiCalculation + ". You may not be eating enough or an underlying illness could be preventing you from gaining weight. Underweight adults are at increased risk of weakened immune system, fragile bones and may experience low energy levels. If you struggle to gain weight, see a GP.";
+        }
+    };
+};
 
 
 
 
 
+// window.addEventListener('scroll', function () {
+//     if (window.pageYOffset > 100) {
+//         nav.classList.add('bg-dark');
+//     } else {
+//         nav.classList.remove('bg-dark');
+//     }
+// });
 
 
 
