@@ -1221,7 +1221,7 @@ main {
   --------------------------------- GYM WEBSITE
   ------------------------------------------- */
 
-/* HERO */
+  /* HERO */
 
 .HeroGym-Container {
   background-image: url(/IMAGES/HeroGym1.jpg);
@@ -1253,6 +1253,12 @@ main {
 
 #close {
   margin: 0;
+}
+
+#sign-up-link {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* WHAT WE DO  */
@@ -1388,7 +1394,7 @@ div.pt-row {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 2vh 0 ;
+  padding: 0 0 0 0 ;
 }
 
 .pt-section {
