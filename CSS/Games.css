@@ -52,9 +52,28 @@ p {
     padding: 0;
 }
 
+@media only screen and |(max-width: 900px) {
+  #progress {
+    display: none;
+  }
+}
+
  /* --------------------------------------------
   --------------------------------- HOMEPAGE WEB
   ---------------------------------------------- */
+
+
+  @media only screen and (max-width: 500px) {
+  .img-responsive {
+    width: 60%;
+    /* height: 100px; */
+    }
+  }
+
+/* button > .navbar-toggler {
+  align-self: auto;
+  margin: 0px auto 0px !important;
+} */
 
 .video-container {
     width: 100%;
@@ -1023,7 +1042,7 @@ form label {
 
 button {
   width: 100px;
-  margin: 30px auto 0;
+  margin: 0px auto;
   background-color: rgb(0, 128, 55);
   color: #fff;
   border: 3px solid rgb(0, 128, 55);
@@ -1248,7 +1267,7 @@ main {
 .gym-button {
   background-color: #ff1616;
   border: 3px solid #ff1616;
-  
+  margin-top: 30px;
 }
 
 #close {
@@ -1482,6 +1501,7 @@ ul {
   width:100%;
   color: white;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -1617,12 +1637,20 @@ ul {
   .gym-website-headings {
     font-size: 30px;
   }
+  .bmi-graph {
+    margin: 0 auto;
+  }
   .bmi-graph-image {
-    width: auto;
+    width: 300px;
   }
   /* SIGN UP  */
   .gym-signup-container {
     padding: 5vh 0;
+  }
+  /* FOOTER  */
+  .gym-footer-container {
+   
+    flex-direction: column;
   }
 }
 
