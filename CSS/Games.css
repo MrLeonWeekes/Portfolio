@@ -68,11 +68,16 @@ p {
     width: 50%;
     /* height: 100px; */
     }
+  .navbar {
+      flex-direction: row;
+    }
   }
 
 button > .navbar-toggler {
   width: 50%;
 }
+
+
 
 .video-container {
     width: 100%;
