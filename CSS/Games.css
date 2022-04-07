@@ -68,7 +68,7 @@ p {
     width: 50%;
     /* height: 100px; */
     }
-  .navbar {
+  .container-fluid {
       flex-direction: row;
     }
   }
