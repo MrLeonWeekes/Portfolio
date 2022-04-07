@@ -271,7 +271,7 @@
 
 
 
-    <section class="gym-website-images">
+    <!-- <section class="gym-website-images">
         <div class="gym-images">
             <img src="/IMAGES/HeroGym2.jpg" alt="gym">
         </div>
@@ -281,7 +281,7 @@
         <div class="gym-images">
             <img src="/IMAGES/HeroGym4.jpg" alt="gym">
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -312,47 +312,11 @@
         </div>
     </footer>
 
-    <!-- <script>
 
-        // array called savePt
-        let pts = [];
-        // create object
-        const addPt = (ev) => {
-            ev.preventDefault();
-            let newPt = {
-                id: Date.now(),
-                firstName: document.getElementById('first_name').value,
-                selection: document.getElementById('pt_select').value
-            }
-            // moves object into an array already set up
-            pts.push(newPt);
-            // reset forms 
-            // document.querySelector('form').rest();
-            document.forms[0].reset();
-            // display purpose only
-            console.warn('added', { pts });
-            let pre = document.querySelector('#msg pre');
-            pre.textContent = '\n' + JSON.stringify(pts, '\t', 2);
-
-            // save to local storage
-            localStorage.setItem('MyClientList', JSON.stringify(pts));
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('myBtn').addEventListener('click', addPt);
-
-
-        });
-        document.getElementById('demo1').innerHTML = pts.firstName + "Your PT";
-
-    </script> -->
 
 
     <script>
-        // function myPt() {
-        //     var ptSelection = document.getElementById("firstName1").value;
-        //     document.getElementById("demo3").innerHTML = "hjvsdhjbjh" + ptSelection;
-        // };
+
 
 
         // Get the modal
