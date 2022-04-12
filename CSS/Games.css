@@ -823,7 +823,7 @@ button.game-fb-startStop {
 
 @media only screen and (max-width:600px){
   .games-container {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   #game {
     margin-bottom: 30px;
