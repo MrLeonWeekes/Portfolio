@@ -1171,7 +1171,8 @@ input.search-box {
   border-radius: 16px 0 16px 0;
   /* border-bottom: 3px solid rgb(0, 128, 55); */
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
-  background-color: rgba(255, 255, 255, 0.664);
+  /* background-color: rgba(255, 255, 255, 0.664); */
+  background-color: rgba(0, 128, 55, 0.2);
 }
 
 header input:focus {
@@ -1190,7 +1191,7 @@ main {
 }
 
 .game4 {
-  background-color: rgba(0, 128, 55, 0.05);
+  /* background-color: rgba(0, 128, 55, 0.05); */
   margin: 0 auto;
   width: 100%;
   /* background-image: url(/IMAGES/weatherP4.jpg); */
@@ -1275,9 +1276,6 @@ main {
   }
   .current .hi-low {
     font-size: 20px;
-  }
-  .game4 {
-    /* background-color: #fff; */
   }
 }
 
@@ -1790,9 +1788,10 @@ a {
 
 
 .project-write-up {
-  /* margin-top: 5vh; */
+  margin: 0vh;
   padding: 5vh 10vh;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgba(0, 128, 55, 0.2);
   box-shadow: -3px -3px 3px rgba(0,0,0,0.4);
 }
 
