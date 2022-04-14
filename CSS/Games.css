@@ -1743,6 +1743,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  #project-page {
+    margin-top: 5vh;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .project {
     padding: 2vh 3vh;
