@@ -56,14 +56,15 @@
         <div class="app-wrap">
             <div id="game-2">
                 <div class="visual "></div>
-                <img class="game-2-image game-img-btn" src="/IMAGES/Weather.png" alt="">
+                <img class="weather-image game-img-btn" src="/IMAGES/Weather.png" alt="">
                 <h1 class="website-headers game-heading-text">Weather App</h1>
                 <h5 class="game-heading-text">Search your local weather</h5>
 
             </div>
             <div class="game4">
                 <header>
-                    <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city">
+                    <input type="text" autocomplete="off" class="search-box"
+                        placeholder="Search for a city & press enter">
                 </header>
                 <main class="weather-app-size">
                     <section class="location">
@@ -79,9 +80,10 @@
             </div>
         </div>
         <p class="project-write-up">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, commodi. Provident omnis nihil
-            veniam. Quod cumque, optio nam dolorem natus sunt amet exercitationem reprehenderit cum voluptatibus
-            debitis quam suscipit maxime.
+            This application uses an event listener to obtain data and run a fetch request which builds up the URL that
+            is required to obtain the correct information from the weather site. The response from the website is
+            captured in JSON where we extract info to be displayed on the website. Finally we use an IF statement to
+            display the appropriate image depending on the current temperature of the specified location.
         </p>
 
 

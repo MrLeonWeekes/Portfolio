@@ -1,5 +1,5 @@
   /* -------------------------------------------
-  --------------------------- PORTFOLIO CSS ----
+  -------------------------------- PORTFOLIO CSS 
   ---------------------------------------------- */
 
 * {
@@ -8,6 +8,13 @@
     box-sizing: border-box;
   }
 
+  /* -------------------------------------------
+  --------------------------------------- NAVBAR
+  ---------------------------------------------- */
+
+.navbar {
+  flex-wrap: nowrap !important;
+}
 
   /* -------------------------------------------
   -------------------------- SCROLL PROGRESS BAR
@@ -63,10 +70,9 @@ p {
   ---------------------------------------------- */
 
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 900px) {
   .img-responsive {
     width: 50%;
-    /* height: 100px; */
     }
   .container-fluid {
       flex-direction: row;
@@ -769,6 +775,7 @@ button.game-fb-startStop {
 }
 
 #game-2 {
+  background-color: #fff;
   align-self: center;
   padding: 0 10vh;
 }
@@ -1118,9 +1125,9 @@ form.contact-container-2 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: rgba(0, 128, 55, 0.05);
+  /* background-color: rgba(0, 128, 55, 0.05); */
   margin: 11vh 0 0;
-  padding:25px 0px;
+  /* padding:25px 0px; */
   /* background-image: url(/IMAGES/weatherP4.jpg); */
   /* background-image: linear-gradient(to bottom, rgba 0,0,0,0.3), rgba(0,0,0,0.6); */
   /* background-size: cover; */
@@ -1128,6 +1135,12 @@ form.contact-container-2 {
   /* color: #fff; */
   min-height: 60vh;
 }
+
+.weather-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 3vh;
+} 
 
 header {
   display: flex;
@@ -1143,7 +1156,7 @@ header {
 
 header input {
   width: 100%;
-  max-width: 280px;
+  max-width: 350px;
   padding: 10px 15px;
   /* background-color: rgba(151, 67, 67, 0.795); */
   /* color: #fff; */
@@ -1166,19 +1179,20 @@ header input:focus {
 }
 
 main {
-  flex: 1 1 100%; 
-  width: 500px;
-  height: 400px;
-  padding: 25px 25px 50px;
   display: flex;
+  margin: 0 auto;
+  /* flex: 1 1 100%;  */
+  width: 500px;
+  /* height: 400px; */
+  padding: 25px 25px 50px;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .game4 {
+  background-color: rgba(0, 128, 55, 0.05);
   margin: 0 auto;
-  /* width: 46%; */
+  width: 100%;
   /* background-image: url(/IMAGES/weatherP4.jpg); */
   /* background-color: rgba(0, 128, 55, 0.2); */
 }
@@ -1191,6 +1205,7 @@ main {
 }
 
 .location .date {
+  text-align: center;
   /* color: rgb(0, 0, 0); */
   font-size: 16px;
 }
@@ -1203,11 +1218,16 @@ main {
   /* text-shadow: 2px 10px rgba(0,0,0,0.6); */
 }
 
-.currebt .temp span {
+.current .temp span {
   font-weight: 500;
 }
 
+.temp {
+  text-align: center;
+}
+
 .current .weather {
+  text-align: center;
   /* color: rgb(0, 0, 0); */
   font-size: 32px;
   font-weight: 700;
@@ -1225,7 +1245,6 @@ main {
 
 
 @media only screen and (max-width: 900px) {
- 
   div.app-wrap {
     display: flex;
     flex-direction: column;
@@ -1234,12 +1253,37 @@ main {
   }
   .weather-app-size {
     width: 100vw;
+    padding: 0px 0px 30px;
   }
-  
-  
+  .weather-image {
+    width: 100px;
+    height: auto;
+    margin-top: 7vh;
+  }
+  header {
+    padding: 30px 15px 15px;
+  }
+  .location .city {
+    font-size: 20px;
+  }
+  .current .weather {
+    font-size: 20px;
+    /* margin-bottom: 15px; */
+  }
+  .current .temp {
+    font-size: 60px;
+  }
+  .current .hi-low {
+    font-size: 20px;
+  }
+  .game4 {
+    /* background-color: #fff; */
+  }
 }
 
-
+/* @media only screen and (max-width: ) {
+  
+} */
 
  /* -------------------------------------------
   --------------------------------- GYM WEBSITE
@@ -1747,7 +1791,13 @@ a {
 
 .project-write-up {
   /* margin-top: 5vh; */
-  padding: 5vh 3vh;
+  padding: 5vh 10vh;
   background-color: #fff;
   box-shadow: -3px -3px 3px rgba(0,0,0,0.4);
+}
+
+@media only screen and (max-width: 600px){
+  .project-write-up {
+    padding: 3vh 5vh;
+  }
 }
