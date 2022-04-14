@@ -604,7 +604,7 @@ button > .navbar-toggler {
   .app {
     display: flex;
     align-items: center;
-    padding: 10vh 0 7vh;
+    padding: 20vh 0 7vh;
     flex-direction: row;
   }
   
