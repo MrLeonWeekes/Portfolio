@@ -1113,18 +1113,24 @@ form.contact-container-2 {
   .python-container {
     display: flex;
     flex-direction: column;
-    padding: 25vh 0 10vh;
-    background-image: url(/IMAGES/FilmFlix4.jpg);
+    padding: 15vh 0 10vh;
+    /* background-image: url(/IMAGES/FilmFlix4.jpg);
     background-size: cover;
+   */
   }
 
 .film-flix {
   margin: 5vh auto;
-  padding: 15px;
-  background-color: #fff;
+  padding: 25px;
+  background-color: rgba(0, 128, 55, 0.2);
   box-shadow: 15px 15px 10px -5px rgba(107, 99, 99, 0.459);
 }
 
+@media only screen and (max-width: 900px){
+  .python-container {
+    padding: 5vh 0 0;
+  }
+}
 
  /* -------------------------------------------
   ------------------------------------- WEATHER
