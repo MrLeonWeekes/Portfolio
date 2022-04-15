@@ -83,8 +83,6 @@ button > .navbar-toggler {
   width: 50%;
 }
 
-
-
 .video-container {
     width: 100%;
     position: relative;
@@ -139,7 +137,6 @@ button > .navbar-toggler {
   font-size: 16px;
 }
 
-
 .text-box p {
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -163,7 +160,6 @@ button > .navbar-toggler {
   height: auto;
 }
 
-
 @media only screen and (max-width: 800px) {
   .text-box {
     top: 65%;
@@ -176,6 +172,9 @@ button > .navbar-toggler {
   }
   .hidden-intro {
     display: block;
+  }
+  .connect-image-container {
+    margin-bottom: 0vh;
   }
 }
 
@@ -197,7 +196,6 @@ button > .navbar-toggler {
     margin-top: 5vh;
   }
 }
-
 
 /* -------------------------------------------
   ------------------------------------ TIMELINE
@@ -852,7 +850,7 @@ button.game-fb-startStop {
 
 
 .about-me-container {
-  margin: 30vh 10vh 10vh 10vh;
+  margin: 0vh 10vh 10vh 10vh;
   display: flex;
   flex-direction: row;
 }
@@ -877,10 +875,19 @@ div.about-me-text {
   text-align: center;
 }
 
-.about-me-text p{
-  padding: 0 10vh;
+.about-me-text i {
+  width: 100%;
+}
+
+.about-me-text p, .about-me-text i, .about-me-text h5{
+  padding: 0 5vh;
   font-size: 16px;
   align-self: center;
+}
+
+.about-me-text i, .about-me-text h5{
+  text-align: center;
+  margin: 0 auto;
 }
 
 .roll-of-honour {
@@ -958,17 +965,17 @@ div.about-me-text {
 @media only screen and (max-width: 650px){
   .about-me-image img{
     width: 300px;
-    margin-bottom: 7vh;
+    margin-bottom: 0vh;
   }
   .about-me-container {
-    margin: 25vh 0 0 0 ;
+    margin: 0vh;
     flex-direction: column;
   }
 }
   @media only screen and (max-width: 500px){
     .about-me-image img{
       margin-top: 5vh;
-      width: 150px;
+      width: 250px;
     }
 }
  /* -------------------------------------------
@@ -976,7 +983,7 @@ div.about-me-text {
   ------------------------------------------- */
 
 .cms-main {
-  margin-top: 25vh;
+  margin-top: 5vh;
   padding: 0 10vh;
 }
 
@@ -1009,7 +1016,8 @@ div.cms {
 
 @media only screen and (max-width: 800px) {
   .cms-main {
-    padding: 7vh 5vh 0;
+    padding: 0vh 5vh 0;
+    margin-top: 0vh;
   }
   .cms-container {
     width: 100%;
@@ -1072,6 +1080,7 @@ button {
 
 .website-headers-2 {
   margin: 0 auto;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px){
@@ -1104,19 +1113,14 @@ form.contact-container-2 {
     }
   }
 
-
  /* -------------------------------------------
   -------------------------------------- PYTHON
   ------------------------------------------- */
-
 
   .python-container {
     display: flex;
     flex-direction: column;
     padding: 15vh 0 10vh;
-    /* background-image: url(/IMAGES/FilmFlix4.jpg);
-    background-size: cover;
-   */
   }
 
 .film-flix {
@@ -1262,8 +1266,6 @@ main {
     font-size: 20px;
   }
 }
-
-
 
  /* -------------------------------------------
   --------------------------------- GYM WEBSITE
@@ -1456,17 +1458,17 @@ ul {
 /* Modal (background) */
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 35vh; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 35vh; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
 }
 
 /* Modal */
@@ -1640,8 +1642,7 @@ ul {
     margin: 0;
     padding: 0;
     width: auto;
-}
-
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1683,24 +1684,21 @@ ul {
   }
 }
 
-
-
  /* -------------------------------------------
   ------------------------------ PORTFOLIO PAGE
   ------------------------------------------- */
 
 #project-page {
-  margin-top: 11vh;
-  /* background-color: rgb(241, 241, 241); */
+  margin-top: 10vh;
+  padding-top: 5vh;
   background-color: rgba(209, 248, 224, 0.432);
 }
 
 .projects-container {
   display: flex;
   flex-direction: row;
-  padding: 0 5vh;
+  padding: 0 1vh;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .project {
@@ -1718,7 +1716,16 @@ ul {
   padding: 15px;
   display: block;
   margin: 0 auto;
-  /* box-shadow: 3px 3px 3px rgb(0, 128, 55); */
+  box-shadow: 2px 2px 5px rgb(170, 170, 170);
+}
+
+.project-image2 {
+  background-color: #fff;
+  width: 500px;
+  height: auto;
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
   box-shadow: 2px 2px 5px rgb(170, 170, 170);
 }
 
@@ -1755,7 +1762,13 @@ a {
   }
   .projects-container {
     flex-direction: column;
-    padding: 0 5vh;
+    padding: 0 2vh;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .project-image2 {
+    width: 400px;
   }
 }
 
@@ -1769,7 +1782,6 @@ a {
   }
 }
 
-
  /* -------------------------------------------
   ---------------------------- PROJECT WRITE UP
   ------------------------------------------- */
@@ -1778,7 +1790,6 @@ a {
 .project-write-up {
   margin: 0vh;
   padding: 5vh 10vh;
-  /* background-color: #fff; */
   background-color: rgba(0, 128, 55, 0.2);
   box-shadow: -3px -3px 3px rgba(0,0,0,0.4);
 }
