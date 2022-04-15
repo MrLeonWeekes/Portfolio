@@ -1776,9 +1776,12 @@ a {
   .projects-container {
     padding: 0;
   }
-  .project-image{
+  .project-image {
     margin: 0 auto;
     width: 80vw;
+  }
+  .project-image2 {
+    width: 300px;
   }
 }
 
