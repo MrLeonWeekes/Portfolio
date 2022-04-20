@@ -1633,6 +1633,12 @@ ul {
   .HeroGym-Div p {
     font-size: 14px;
   }
+  /* SignUp  */
+  .contact-section-1 > input, .contact-section-1 > select {
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.336); */
+    box-shadow: none;
+    border: 2px solid #000;
+  }
   /* GYM IMAGES */ 
   .gym-website-images {
     flex-direction: column;
