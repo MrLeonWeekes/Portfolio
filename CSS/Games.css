@@ -1477,7 +1477,7 @@ ul {
   background-color: #fefefe;
   margin: auto;
   border: 4px solid #fff;
-  width: 80%;
+  width: 100%;
 }
 
 #close:hover,
@@ -1498,7 +1498,7 @@ ul {
 }
 
 .modal_img {
-  background-image: url(/IMAGES/HeroGym3.jpg);
+  background-image: url(/IMAGES/project-gym-2.jpg);
   background-position: center;
   height: 30vh;
 }
@@ -1642,6 +1642,16 @@ ul {
     margin: 0;
     padding: 0;
     width: auto;
+  }
+  /* Modal */
+  .modal_text {
+    font-size: 16px
+  }
+  .modal_split_1 {
+    padding: 0 2vh;
+  }
+  .modal_img {
+    align-self: center;
   }
 }
 
