@@ -1818,3 +1818,140 @@ a {
     padding: 3vh 5vh;
   }
 }
+
+
+ /* -------------------------------------------
+  ------------------------------------ FOOTBALL
+  ------------------------------------------- */
+
+
+.football-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  align-items: center;
+  padding: 5vh 5vh;
+  background-color: rgb(228, 228, 228);
+  background-image: url(/IMAGES/footballBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.football-heading {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.match {
+  display: grid;
+  grid-template-columns: auto 30px 30px 30px auto;
+  padding: 10px;
+}
+
+.team-home {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.team-away {
+  padding-left: 10px;
+}
+
+.team,.versus, .score {
+  font-size: 25px;
+}
+
+.versus, .score {
+  text-align: center;
+}
+
+.score {
+  color: goldenrod;
+}
+
+.team {
+  width: 300px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.football-button, .football-button-next {
+  padding: 15px 20px;
+  width: auto;
+}
+
+.football-button {
+  background-color: goldenrod !important;
+  border: goldenrod !important;
+}
+
+.football-button-next {
+  background-color: rgb(0, 0, 0) !important;
+  border: rgb(0, 0, 0) !important;
+  color: goldenrod;
+}
+
+#final-button {
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1400px){
+  .football-container {
+    background-color: rgb(255, 255, 255);
+    background-size: contain; 
+  }
+}
+
+@media only screen and (max-width: 950px){
+  .football-container {
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .football-container {
+    margin-top: 5vh;
+    padding: 5vh 5vh;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .football-heading {
+    font-size: 30px;
+  }
+  .team,.versus, .score {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .football-heading {
+    font-size: 20px;
+  }
+  .team,.versus, .score {
+    font-size: 14px;
+  }
+  p.match {
+    margin-bottom: 0;
+  }
+  .football-button, .football-button-next {
+    padding: 10px 15px;
+    width: auto;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
