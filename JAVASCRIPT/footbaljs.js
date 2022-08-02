@@ -31,8 +31,6 @@ function last16() {
         return teamScores;
     });
 
-
-
     if (teamScores[0] > teamScores[1]) {
         teams.splice(1, 1);
     } else if (teamScores[0] < teamScores[1]) {
