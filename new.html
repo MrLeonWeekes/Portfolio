@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
 
 <head>
     <meta charset="UTF-8">
@@ -15,22 +15,17 @@
 
     <title>Leon Weekes Portfolio</title>
 </head>
-<!-- align-items-end ml-lg-auto -->
 
 <body>
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white rounded fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm rounded fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://leonweekes.com/"><img src="/IMAGES/Leon Weekes-5.png"
-                    class="img-responsive"></a>
+            <a class="navbar-brand" href="#"><img src="/IMAGES/Leon Weekes-5.png" class="img-responsive"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -43,9 +38,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contactUs.html">Contact Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav_cv" href="IMAGES/Leon Weekes-CV.pdf" download>CV</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -55,42 +47,30 @@
         <div class="home_main_container">
             <div class="home_main_intro_container">
                 <div class="home_main_intro_header">
-                    <h1>Hi, I am <span>Leon Weekes</span></h1>
+                    <h1>Hi I am <span>Leon Weekes</span></h1>
                 </div>
                 <div class="home_main_intro_text">
-                    <p>I'm an ambitious, commercially focused junior web developer with finance experience and a wealth
-                        of
-                        transfereble skills and a passion for digital innovation. I'm seeking an entry-level role as a
-                        Web
-                        developer.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
                 </div>
                 <div class="home_main_intro_btn slidein">
-                    <!-- <button class="home_main_intro_button button_standard button_1"><i class="fa-regular fa-file"></i>
-                        Download
-                        CV</button> -->
-
-                    <a href="https://github.com/MrLeonWeekes" target="_blank"><button
-                            class="home_main_intro_button button_standard button_1"><i class="fa-brands fa-github"></i>
-                            GitHub</button></a>
-
-                    <a href="https://linkedin.com/in/leon-weekes-659ab8233" target="_blank"><button
-                            class="home_main_intro_button button_standard button_2"><i
-                                class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+                    <button class="home_main_intro_button"><i class="fa-regular fa-file"></i> Download CV</button>
+                    <button class="home_main_intro_button"><i class="fa-brands fa-linkedin"></i> Linkedin</button>
                 </div>
             </div>
             <div class="home_main_image_container">
                 <div class="home_main_image">
-                    <img class="home_main_image_pic" src="/IMAGES/profile2.png" alt="Me">
-                    <div class="home_main_box_1 skills">
+                    <img class="home_main_image_pic" src="/IMAGES/test3.jpg" alt="Me">
+                    <div class="home_main_box_1">
                         HTML - CSS
                     </div>
-                    <div class="home_main_box_2 skills2">
+                    <div class="home_main_box_2">
                         JavaScript - Python
                     </div>
-                    <div class="home_main_box_3 skills3">
+                    <div class="home_main_box_3">
                         MySQL - MongoDB
                     </div>
-                    <div class="home_main_box_4 skills4">
+                    <div class="home_main_box_4">
                         GIT - GitHub
                     </div>
                 </div>
@@ -107,7 +87,6 @@
             <div class="home_main_about_text">
                 <div class="home_main_about_1">
                     <i class="fa-solid fa-book-open about-icon"></i>
-                    <h4 class="home_title">The Past</h4>
                     <p class="home_main_about_text">Having a career in finance where I would use software tools to
                         calculate
                         results and produce reports, I always wanted to explore the techniques behind how the systems
@@ -117,7 +96,6 @@
                 </div>
                 <div class="home_main_about_2">
                     <i class="fa-solid fa-laptop-code about-icon"></i>
-                    <h4 class="home_title">The Present</h4>
                     <p class="home_main_about_text">Being with JustIT has allowed me to gain experience in creating and
                         using
                         Front-End and Database web applications. We utilised HTML, CSS, JavaScript, Python and MySQL to
@@ -129,7 +107,6 @@
                 </div>
                 <div class="home_main_about_3">
                     <i class="fa-solid fa-folder-plus about-icon"></i>
-                    <h4 class="home_title">The Future</h4>
                     <p class="home_main_about_text">I’m looking for an opportunity to express my skills and also
                         continue developing further to facilitate process improvements and growth in an agile working
                         environment. I am also proficient in content management systems like WordPress, Squarespace and
@@ -143,6 +120,7 @@
             </div>
 
             <div class="home_main_about_projects">
+
                 <div class="project">
                     <a href="projects.html" target="_blank">
                         <img class="project-image2" src="/IMAGES/4.png" alt="p1">
