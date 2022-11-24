@@ -108,16 +108,25 @@
   .nav-link {
     font-size: 22px;
     letter-spacing: 2px;
+    padding: 5px 0;
+    border-bottom: 2px solid #fff;
+  }
+
+  .nav-link:hover {
+    border-bottom: 2px solid rgb(0, 128, 55);
   }
 
   .navbar-light .navbar-nav .nav-item .nav-link {
-
     color: rgb(0, 128, 55);
-
   }
 
   .nav_cv {
     color: #f08700 !important;
+    border-bottom: 2px solid #fff;
+  }
+
+  .nav_cv:hover {
+    border-bottom: 2px solid #f08700 !important;
   }
 
   /* -------------------------------------------
